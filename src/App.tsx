@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Sidebar from "./components/Sidebar";
-import ChatWindow from "./components/ChatWindow";
+import MainDiv from "./components/MainDiv";
 
 interface Message {
   id: number;
@@ -46,8 +46,9 @@ function App() {
         onNewChat={handleNewChat}
       />
 
-      <div className="flex-1 flex flex-col">
-        <ChatWindow messages={messages} onSendMessage={handleSendMessage} />
+      {/* Main Chat Frame with visible shadow */}
+      <div className="flex-1 m-3">
+        <MainDiv messages={messages} onSendMessage={handleSendMessage} />
       </div>
     </div>
   );
