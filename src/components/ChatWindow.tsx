@@ -33,7 +33,7 @@ const ChatWindow = ({ messages, onSendMessage }: ChatWindowProps) => {
   return (
     <div className="flex flex-col h-full bg-white rounded-lg overflow-hidden">
       {/* Messages area */}
-      <div className="flex-1 min-h-0 overflow-y-auto px-3 space-y-3 pt-4 pb-20 bg-gray-50">
+      <div className="flex-1 min-h-0 overflow-y-auto px-3 space-y-3 pt-4 pb-20 bg-white">
         {messages.length === 0 ? (
           <div className="flex items-center justify-center h-full text-gray-400">
             <p>Start a new conversation</p>
@@ -62,10 +62,10 @@ const ChatWindow = ({ messages, onSendMessage }: ChatWindowProps) => {
       </div>
 
       {/* Input box */}
-      <div className="rounded-b-lg left-0 right-0 px-3 py-2 bg-gray-50">
+      <div className="rounded-b-lg left-0 right-0 px-3 py-2 bg-white">
         <form
           onSubmit={handleSubmit}
-          className="w-full max-w-2xl mx-auto flex items-center gap-2 bg-white rounded-lg px-3 py-1.5 ring-1 ring-gray-300 focus-within:ring-2 focus-within:ring-blue-500 transition"
+          className="w-full max-w-2xl mx-auto flex items-center gap-2 bg-gray-50 rounded-lg px-3 py-1.5 ring-1 ring-gray-300 focus-within:ring-2 focus-within:ring-blue-500 transition"
         >
           <input
             type="text"

@@ -15,9 +15,13 @@ interface MainDivProps {
 
 const MainDiv = ({ messages, onSendMessage }: MainDivProps) => {
   return (
-    <div className="relative h-full w-full rounded-lg shadow-lg bg-white flex flex-col p-[4px]">
+    <div className="relative h-full w-full rounded-lg  bg-white flex flex-col  ">
       {/* Top Buttons */}
-      <div className="flex justify-end gap-2 p-2">
+      <div className="relative flex justify-end mt-0 rounded-lg bg-white gap-0.1 ">
+        <div className="flex bg-gray-200 rounded-bl-full w-xs h-xs pr-1 ">
+       <div className="w-xs h-12 bg-white transform skew-x-21 rounded-tr-lg "></div>
+
+        </div>
         <TopButtons />
       </div>
 
